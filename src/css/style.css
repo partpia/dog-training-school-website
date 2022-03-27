@@ -1,0 +1,385 @@
+/* GENERAL */
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+h2, h3 {
+    font-family: 'Hubballi', cursive;
+}
+h2 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1.5px solid rgb(143, 139, 139); 
+    line-height: 0.1em;
+    margin: 0 0 50px;
+    font-weight: 700;
+ } 
+ h2 span { 
+     background:#fff; 
+     padding:0 10px; 
+ }
+ h3 {
+     margin-bottom: 20px;
+ }
+ .hide-link a {
+     text-decoration: none;
+     color: #2ca9c2;
+     font-weight: 700;
+}
+/* buttons */
+.button-teal {
+    background-color: #2ca9c2;
+    color: white
+}
+.button-orange {
+    background-color: #f2a386;
+}
+
+/* NAVBAR */
+
+.navbar-custom {
+    background-color: #F9F1F0;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.navbar-custom .navbar-brand {
+    font-family: 'Mali', cursive;
+    font-size: 42px;
+    font-weight: 600;
+    color: black;
+    margin-left: 50px;
+}
+.navbar-custom .navbar-brand:hover {
+    color: inherit;
+}
+.navbar-custom .navbar-nav .nav-link {
+    font-family: 'Hubballi', cursive;
+    font-size: 24px;
+    color: black;
+}
+.navbar-custom .nav-item .nav-link.active {
+    color: #FF8882;
+    font-weight: 700;
+}
+.navbar-custom .nav-item:hover .nav-link {
+    color: #FF8882;
+}
+.nav-item {
+    margin-left: 15px;
+}
+.dropdown-menu {
+    background-color: #FBFBFB;
+    font-family: 'Hubballi', cursive;
+    font-size: 18px;
+    color: black;
+}
+.dropdown-item:hover {
+    background-color: #FF8882;
+    color: white;
+}
+.dropdown-item.active {
+    background-color: #FBFBFB;
+    color: #FF8882;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 136, 130)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    border-color: #ff8882;
+}
+.custom-toggler.navbar-toggler {
+    border-color: #FF8882;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: rgb(139, 205, 80, 0.5);
+    margin-top: 40px;
+}
+.logo {
+    font-family: 'Mali', cursive;
+    font-size: 36px;
+    color: black;
+    font-weight: 700;
+}
+.brand {
+    font-family: 'Mali', cursive;
+    font-size: 18px;
+}
+#footer-cols-left {
+    margin-top: 25px;
+}
+#footer-cols-center {
+    margin-top: 25px;
+    text-align: center;
+}
+#footer-cols-right {
+    margin-top: 25px;
+    text-align: end;
+}
+.footer-icons-right {
+    margin-right: 6px;
+}
+.footer-icons-center {
+    margin-right: 15px;
+}
+
+/* ETUSIVU , index.html */
+
+#front-page-courses {
+    background-color: #F9F1F0;
+    padding: 20px;
+    margin-top: 35px;
+}
+
+/* KURSSIT , courses.html */
+
+.course-col {
+    align-self: center;
+}
+.course-text-beige p {
+    background-color: #FAE8E0;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.course-text-orange p {
+    background-color: rgb(242, 163, 134, 0.5);
+    padding: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.courses {
+   margin-bottom: 40px;
+   opacity: 0;
+   transition: opacity 250ms ease-in;
+}
+.courses.appear {
+    opacity: 1;
+}
+.course-content-left {
+    transform: translateX(-50%);
+}
+.course-content-right {
+    transform: translateX(50%);
+}
+.course-content-left,
+.course-content-right {
+    transition: transform 600ms ease-in;
+}
+.course-content-left.appear,
+.course-content-right.appear {
+    transform: translateX(0);
+}
+
+/* YKSITYISTUNNIT, lessons.html */
+
+#carousel {
+    max-width: 65%;
+    margin: auto;
+}
+
+/* HINNASTO , pricing.html */
+
+/* cards */
+.card-header {
+    height: 160px;
+    background-image: linear-gradient(to right, #2ca9c2, #71b0b5);
+    text-align: center;
+}
+.card-header i {
+    font-size: 88px;
+    color: #FAE8E0;
+    margin-top: 20px;
+}
+.card-body {
+    margin-top: 20px;
+    text-align: center;
+}
+.card-title {
+    font-family: 'Hubballi', cursive;
+    font-weight: 700;
+
+}
+
+/* KEITÄ OLEMME? , aboutus.html */
+
+#staff-text-right h3,
+#staff-text-left h3 {
+    overflow: hidden;
+    text-align: center;
+}
+#staff-text-right h3:before,
+#staff-text-right h3:after,
+#staff-text-left h3:before,
+#staff-text-left h3:after {
+    background-color: #FF8882;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+#staff-text-left h3:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+#staff-text-left h3:after {
+    left: 0.5em;
+    margin-right: -50%;
+    display: none;
+}
+#staff-text-right h3:before {
+    right: 0.5em;
+    margin-left: -50%;
+    display: none;
+}
+#staff-text-right h3:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+/*  VINKKEJÄ , tips.html */
+
+/*  icons
+    color of the round/background icon */
+.fa-stack-2x {
+    color: #2ca9c2;
+}
+/* color of the icon */
+.fa-stack-1x {
+    --fa-inverse: #F9F1F0;
+}
+#circle-icons {   
+    text-align: center;
+    vertical-align: bottom;
+}
+.round-info {
+    margin-bottom: 25px;
+}
+.round-info:hover,
+.open-video-modal:hover i {
+    opacity: 0.7;
+}
+.anchor {
+    padding-top: 50px;
+}
+
+/* random dog */
+#random-dog img {
+    max-width: 400px;
+}
+
+/* books */
+#table-books i {
+    color: #2ca9c2;
+}
+#table-books {
+    background-color: #F9F1F0;
+}
+
+/* videos */
+.open-video-modal {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.open-video-modal i {
+    color: #f2a386;
+}
+.open-video-modal h4 {
+    font-family: 'Hubballi', cursive;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+/* UKK , faq.html */
+
+.header {
+    margin: 80px 0 60px;
+}
+.accordion-header button {
+    font-family: 'Hubballi', cursive;
+    font-size: 22px;
+    font-weight: 700;
+    background-color: #FAE8E0;
+}
+.accordion-body {
+    background-color: #F9F1F0;
+}
+#faq-dog {
+    align-self: center;
+}
+#faq-accordion {
+    margin-bottom: 25px;
+}
+
+/* OTA YHTEYTTÄ , contact.html */
+
+.success-toast {
+    background-color: #b1d096;
+    font-size: 18px;
+}
+.form-check {
+    background-color: #FAE8E0;
+    border-radius: 25px;
+}
+#enrollment-icon-animated {
+    color: #fe6c42;
+    align-items: center;
+    --fa-animation-duration: 2s;
+    --fa-animation-iteration-count: 3;
+    --fa-animation-timing: ease-in-out;
+}
+
+/*  ANIMATIONS 
+    aboutus.html */
+#staff-text-left,
+#staff-text-right {
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+@keyframes fade-in {
+    from{opacity:0;}
+    to{opacity: 1;}
+}
+/* index.html */
+#welcome {
+    animation-name: move-in;
+    animation-duration: 2s;
+}
+@keyframes move-in {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+/* MEDIA */
+
+@media (max-width: 770px) { 
+    #carousel {
+        max-width: 100%;
+    }
+    #footer-cols-left,
+    #footer-cols-center,
+    #footer-cols-right {
+        text-align: center !important;
+    }
+    #map,
+    .course-content-right {
+        margin-top: 35px;
+    }
+    .anchor {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 576px) { 
+    #carousel {
+        max-width: 100%;
+    }
+}
