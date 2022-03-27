@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ota yhteyttä</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant&family=Fredoka&family=Mali&family=Tajawal&family=Hubballi&display=swap"
+        rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <!-- in order to use Font Awesome icons, add Kit Code to the scr -->
+    <script src="https://kit.fontawesome.com/YOURKITCODE.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <b style="color: #FF8882; -webkit-text-stroke: 0.1px black;">Pentu</b>pa
+                <img src="./images/icons/house-heart.svg" alt="house" width="36" height="36">
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">ETUSIVU</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuServices" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PALVELUT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuServices">
+                            <li><a class="dropdown-item" href="./courses.html">KURSSIT</a></li>
+                            <li><a class="dropdown-item" href="./lessons.html">YKSITYISTUNNIT</a></li>
+                            <li><a class="dropdown-item" href="./pricing.html">HINNASTO</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuInfo" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TIETOA
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuInfo">
+                            <li><a class="dropdown-item" href="./aboutus.html">KEITÄ OLEMME?</a></li>
+                            <li><a class="dropdown-item" href="tips.html">VINKKEJÄ</a></li>
+                            <li><a class="dropdown-item" href="faq.html">UKK</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./arrival.html">SAAPUMINEN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./contact.html">OTA YHTEYTTÄ!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- course registration instructions and form -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2><span>Kurssi-ilmoittautuminen</span></h2>
+                <p> Voit ilmoittautua yhdelle tai useammalle kurssille samalla lomakkeella. Vahvistamme osallistumisen
+                    sähköpostitse
+                    ja liitämme laskun mukaan.
+                </p>
+                <form action="#" id="course-enrollment">
+                    <!-- courses from Firestore, checkboxes -->
+                    <div class="form-check py-3">
+                        <div id="checkbox-inputs"></div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="input-group">
+                            <div class="col me-3 form-floating">
+                                <input type="text" class="form-control" id="firstname" placeholder="Etunimi" required>
+                                <label for="firstname" class="form-label">Etunimi</label>
+                            </div>
+                            <div class="col form-floating">
+                                <input type="text" class="form-control" id="lastname" placeholder="Sukunimi">
+                                <label for="lastname" class="form-label">Sukunimi</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="text" class="form-control" id="address" placeholder="Address">
+                        <label for="address" class="form-label">Katuosoite</label>
+                    </div>
+                    <div class="row my-3">
+                        <div class="input-group">
+                            <div class="col me-3 form-floating">
+                                <input type="number" class="form-control" id="postalCode" placeholder="Postinumero">
+                                <label for="postalCode" class="form-label">Postinumero</label>
+                            </div>
+                            <div class="col form-floating">
+                                <input type="text" class="form-control" id="region" placeholder="Postitoimipaikka">
+                                <label for="region" class="form-label">Postitoimipaikka</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="email" class="form-control" id="email" placeholder="Sähköposti">
+                        <label for="email" class="form-label">Sähköposti</label>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="tel" class="form-control" id="phone" placeholder="0501234567">
+                        <label for="phone" class="form-label">Puhelin</label>
+                    </div>
+                    <button id="submitEnrollment" class="btn btn-info button-teal">Ilmoittaudu</button>
+                    <input type="reset" value="Tyhjennä" class="btn btn-secondary">
+                </form>
+            </div>
+            <!-- beating paw icon -->
+            <div class="col-lg-6">
+                <div class="col text-center mb-5">
+                    <i class="fa-solid fa-paw fa-beat fa-10x" id="enrollment-icon-animated"></i>
+                </div>
+                <h2><span>Yhteydenotto</span></h2>
+                <p> Voit jättää meille palautetta tai kysymyksiä tämän lomakkeen kautta.
+                    Jätäthän yhteystietosi, mikäli toivot vastausta.
+                </p>
+                <!-- contact-form -->
+                <form action="#" id="contact-form">
+                    <div class="mb-3 form-floating">
+                        <textarea class="form-control" placeholder="Viesti" id="message" style="height: 150px"
+                            required></textarea>
+                        <label for="message" class="form-label">Viesti</label>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="text" class="form-control" id="name" placeholder="Nimi" required>
+                        <label for="name" class="form-label">Nimi</label>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="email" class="form-control" id="contactEmail" placeholder="Sähköposti">
+                        <label for="contactEmail" class="form-label">Sähköposti</label>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="tel" class="form-control" id="contactPhone" placeholder="Puhelin">
+                        <label for="contactPhone" class="form-label">Puhelin</label>
+                    </div>
+                    <button id="submitContactForm" class="btn btn-info button-teal">Lähetä</button>
+                    <input type="reset" value="Tyhjennä" class="btn btn-secondary">
+                </form>
+                <!-- modal, displayed when forms are successfully submitted or when an error occurs -->
+                <div class="modal" id="infoModal" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content" style="background-color: #F9F1F0; text-align: center;">
+                            <div class="modal-header" id="modal-bc">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p id="modal-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row" style="margin-top: 15px;">
+                <div class="col-md-4" id="footer-cols-left">
+                    <p class="logo"><b style="color: #f0a9a5; -webkit-text-stroke: 0.1px black;">Pentu</b>pa
+                        <img src="./images/icons/house-heart.svg" alt="house" width="28" height="28">
+                    </p>
+                    <p class="brand">parasta puuhaa pennuille!</p>
+                </div>
+                <div class="col-md-4" id="footer-cols-center">
+                    <p>Olemme kotimainen pentujen koulutukseen ja hyvinvointiin erikoistunut yritys.</p>
+                    <p>
+                        <i class="fa-brands fa-facebook fa-xl footer-icons-center"></i>
+                        <i class="fa-brands fa-instagram fa-xl footer-icons-center"></i>
+                        <i class="fa-brands fa-tiktok fa-xl footer-icons-center"></i>
+                    </p>
+                    <p style="font-size: 20px;">
+                        <i class="fa-solid fa-hashtag"></i><b>pentupa</b>
+                    </p>
+                </div>
+                <div class="col-md-4" id="footer-cols-right">
+                    <p><i class="fa-solid fa-at footer-icons-right"></i> pentupa (at) pentupa.com</p>
+                    <p><i class="fa-solid fa-phone footer-icons-right"></i> 050 123 4567</p>
+                    <p><i class="fa-solid fa-map-pin footer-icons-right"></i> Tassukuja 9<br>
+                        10101 Kuonomäki</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+
+        // Firebase Firestore
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-app.js";
+        import {
+            arrayUnion,
+            getFirestore,
+            collection,
+            addDoc,
+            getDocs,
+            doc,
+            onSnapshot,
+            orderBy,
+            query,
+            serverTimestamp,
+            updateDoc
+        } from "https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore.js";
+        // TODO: Replace the following with your app's Firebase project configuration
+        // Initialize Firebase
+        const firebaseApp = initializeApp({
+            // ...
+        });
+        // Initialize Cloud Firestore and get a reference to the service
+        const db = getFirestore(firebaseApp);
+
+        // gets all courses from Firebase Firestore
+        const q = query(collection(db, 'courses'), orderBy('startDateTime'));
+        const querySnapshot = await getDocs(q);
+        let courses = "";
+
+        querySnapshot.forEach((doc) => {
+            const options = { weekday: 'short', year: 'numeric', month: 'numeric', day: 'numeric' };
+            let startDate = doc.data().startDateTime.toDate().toLocaleDateString('fi-Fi', options);
+            let startTime = doc.data().startDateTime.toDate().toLocaleTimeString('fi-Fi').substring(0, 5);
+            let endTime = doc.data().endDateTime.toDate().toLocaleTimeString('fi-Fi').substring(0, 5);
+
+            courses = courses +
+                `<div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="${doc.id}" id="${doc.id}">
+                            <label class="form-check-label" for="${doc.id}">
+                                <b>${doc.data().name}</b><br>${startDate} klo ${startTime} - ${endTime}, ohjaaja ${doc.data().instructor}
+                            </label>
+                        </div>`
+        });
+        // displays course details in checkboxes
+        document.getElementById('checkbox-inputs').innerHTML = courses;
+
+        // handles course enrollment-form data to Firestore
+        var submitEnrollmentButtonElement = document.getElementById('submitEnrollment');
+        submitEnrollmentButtonElement.addEventListener('click', handleEnrollmentForm);
+
+        async function handleEnrollmentForm() {
+            event.preventDefault();
+            // values of inputs
+            var fname = document.getElementById('firstname').value;
+            var lname = document.getElementById('lastname').value;
+            var address = document.getElementById('address').value;
+            var postalcode = document.getElementById('postalCode').value;
+            var region = document.getElementById('region').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+
+            // values of selected checkboxes
+            let selectedCourses = [];
+            let checkboxes = document.querySelectorAll('.form-check-input');
+
+            checkboxes.forEach((checkbox) => {
+                if (checkbox.checked) {
+                    selectedCourses.push(checkbox.value);
+                }
+            });
+            // if one or more courses selected --> enrollment details to Firestore
+            if (selectedCourses.length === 0) {
+                showModal(errorIcon, 'Valitse vähintään yksi kurssi.', '#fc4040')
+            } else {
+                try {
+                    selectedCourses.map((course) => {
+                        const courseRef = doc(db, 'courses', course);
+                        updateDoc(courseRef, {
+                            participants: arrayUnion({
+                                firstname: fname,
+                                lastname: lname,
+                                address: address,
+                                postalcode: postalcode,
+                                region: region,
+                                email: email,
+                                phone: phone
+                            })
+                        })
+                    })
+                    showModal(successIcon, 'Kurssi-ilmoittautuminen lähetetty onnistuneesti.<br><br>Vahvistamme paikan sähköpostitse ja liitämme oheen laskun.', '#b1d096');
+                    document.getElementById('course-enrollment').reset();
+                    selectedCourses = [];
+                } catch (error) {
+                    showModal(errorIcon, 'Ilmoittautuminen ei onnistunut.', '#fc4040');
+                }
+            }
+        }
+        // function to show modal
+        function showModal(icon, bodyText, color) {
+            let modal = bootstrap.Modal.getOrCreateInstance(document.getElementById('infoModal'))
+            document.getElementById('modal-text').innerHTML = `${icon} &nbsp;&nbsp;${bodyText}`;
+            document.getElementById('modal-bc').style = `background-color: ${color}`
+            modal.show();
+        }
+        // icons in modal body
+        const errorIcon = '<i class="fa-solid fa-circle-exclamation fa-xl" style="color: #fc4040"></i>';
+        const successIcon = '<i class="fa-solid fa-circle-check fa-xl" style="color: #529b12"></i>';
+        const smileIcon = '<i class="fa-solid fa-face-smile fa-xl" style="color: #FF8882"></i>'
+
+        // handles contact-form data to Firestore
+        var submitContactButtonElement = document.getElementById('submitContactForm');
+        submitContactButtonElement.addEventListener('click', handleContactForm);
+
+        async function handleContactForm() {
+            event.preventDefault();
+            // values of inputs
+            var msg = document.getElementById('message').value;
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('contactEmail').value;
+            var phone = document.getElementById('contactPhone').value;
+
+            try {
+                const docRef = await addDoc(collection(db, "messages"), {
+                    message: msg,
+                    name: name,
+                    email: email,
+                    phone: phone,
+                    msgSendTime: serverTimestamp()
+                })
+                showModal(smileIcon, 'Kiitos yhteydenotosta!<br><br> Pyrimme vastaamaan yhteydenottopyyntöihin mahdollisimman pian.', '#FF8882');
+                document.getElementById('contact-form').reset();
+            } catch (error) {
+                showModal(errorIcon, 'Viestin lähetys ei onnistunut.', '#fc4040');
+            }
+        }
+    </script>
+</body>
+
+</html>
