@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UKK</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant&family=Fredoka&family=Mali&family=Tajawal&family=Hubballi&display=swap"
+        rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <!-- in order to use Font Awesome icons, add Kit Code to the scr -->
+    <script src="https://kit.fontawesome.com/YOURKITCODE.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <b style="color: #FF8882; -webkit-text-stroke: 0.1px black;">Pentu</b>pa
+                <img src="./images/icons/house-heart.svg" alt="house" width="36" height="36">
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">ETUSIVU</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuServices" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            PALVELUT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuServices">
+                            <li><a class="dropdown-item" href="./courses.html">KURSSIT</a></li>
+                            <li><a class="dropdown-item" href="./lessons.html">YKSITYISTUNNIT</a></li>
+                            <li><a class="dropdown-item" href="./pricing.html">HINNASTO</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuInfo" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            TIETOA
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuInfo">
+                            <li><a class="dropdown-item" href="./aboutus.html">KEITÄ OLEMME?</a></li>
+                            <li><a class="dropdown-item" href="tips.html">VINKKEJÄ</a></li>
+                            <li><a class="dropdown-item active" href="faq.html">UKK</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./arrival.html">SAAPUMINEN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">OTA YHTEYTTÄ!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- content of the page -->
+    <div class="container mt-5">
+        <div class="col sm-9">
+            <h2 class="header"><span>Usein kysytyt kysymykset</span></h2>
+            <p> Alle on koottu vastauksia eniten kysymyksiä herättäneisiin asioihin liittyen.
+                Jos vastausta ei löydy, voit olla meihin yhteydessä, joko puhelimitse,
+                <span class="hide-link"><a href="./contact.html">Yhteydenotto</a></span>-lomakkeen tai sosiaalisen
+                median kautta.
+            </p>
+        </div>
+        <!-- faq displayed in bootstrap 5 accordion -->
+        <div class="row">
+            <div class="col-lg-8 mt-4">
+                <div class="accordion" id="faq-accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Miten voin ilmoittautua kursseille?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla modi, ab, commodi
+                                soluta amet, quas sapiente aliquam dignissimos sit odit laborum velit veritatis
+                                sunt a rem voluptates tempora ea eum!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Pitääkö pennun olla rokotettu?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla modi, ab, commodi
+                                soluta amet, quas sapiente aliquam dignissimos sit odit laborum velit veritatis
+                                sunt a rem voluptates tempora ea eum!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Mitä tarvitsen kurssille mukaan?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla modi, ab, commodi
+                                soluta amet, quas sapiente aliquam dignissimos sit odit laborum velit veritatis
+                                sunt a rem voluptates tempora ea eum!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Voinko ottaa lapseni mukaan kurssille?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla modi, ab, commodi
+                                soluta amet, quas sapiente aliquam dignissimos sit odit laborum velit veritatis
+                                sunt a rem voluptates tempora ea eum!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Miten korona on huomioitu?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla modi, ab, commodi
+                                soluta amet, quas sapiente aliquam dignissimos sit odit laborum velit veritatis
+                                sunt a rem voluptates tempora ea eum!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- image -->
+            <div class="col-lg-4" id="faq-dog">
+                <img src="./images/camylla-battani-AoqgGAqrLpU-unsplash.jpg" class="img-fluid rounded" alt="dog" />
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row" style="margin-top: 15px;">
+                <div class="col-md-4" id="footer-cols-left">
+                    <p class="logo"><b style="color: #f0a9a5; -webkit-text-stroke: 0.1px black;">Pentu</b>pa
+                        <img src="./images/icons/house-heart.svg" alt="house" width="28" height="28">
+                    </p>
+                    <p class="brand">parasta puuhaa pennuille!</p>
+                </div>
+                <div class="col-md-4" id="footer-cols-center">
+                    <p>Olemme kotimainen pentujen koulutukseen ja hyvinvointiin erikoistunut yritys.</p>
+                    <p>
+                        <i class="fa-brands fa-facebook fa-xl footer-icons-center"></i>
+                        <i class="fa-brands fa-instagram fa-xl footer-icons-center"></i>
+                        <i class="fa-brands fa-tiktok fa-xl footer-icons-center"></i>
+                    </p>
+                    <p style="font-size: 20px;">
+                        <i class="fa-solid fa-hashtag"></i><b>pentupa</b>
+                    </p>
+                </div>
+                <div class="col-md-4" id="footer-cols-right">
+                    <p><i class="fa-solid fa-at footer-icons-right"></i> pentupa (at) pentupa.com</p>
+                    <p><i class="fa-solid fa-phone footer-icons-right"></i> 050 123 4567</p>
+                    <p><i class="fa-solid fa-map-pin footer-icons-right"></i> Tassukuja 9<br>
+                        10101 Kuonomäki</p>
+                </div>
+            </div>
+        </div>
+    </div>
